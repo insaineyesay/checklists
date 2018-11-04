@@ -30,6 +30,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         navigationController?.popViewController(animated: true)
     }
     
+    
     // MARK:- Outlets
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
@@ -46,6 +47,11 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         let newText = oldText.replacingCharacters(in: stringRange, with: string)
         
         doneBarButton.isEnabled = !newText.isEmpty
+        return true
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        doneBarButton.isEnabled = false
         return true
     }
     
