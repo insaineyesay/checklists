@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "26d4be9e7bcd5fa31903b1dad86022eb"
+build_time: [1541301293, 88230000]
+inputs:
+  "/Users/insaineyesay/Dev/ios dev/checklists/Checklists/ChecklistViewController.swift": [9223372036, 854775807]
+  "/Users/insaineyesay/Dev/ios dev/checklists/Checklists/ChecklistItem.swift": [9223372036, 854775807]
+  "/Users/insaineyesay/Dev/ios dev/checklists/Checklists/AppDelegate.swift": [9223372036, 854775807]
