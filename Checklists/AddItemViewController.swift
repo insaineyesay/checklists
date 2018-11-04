@@ -30,10 +30,11 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         navigationController?.popViewController(animated: true)
     }
     
+    
     // MARK:- Outlets
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var doneBarButton: UITextField!
-
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
+    
     // MARK:- Table View Delegates
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         return nil
@@ -45,11 +46,12 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         let stringRange = Range(range, in:oldText)!
         let newText = oldText.replacingCharacters(in: stringRange, with: string)
         
-        if newText.isEmpty {
-            doneBarButton.isEnabled = false
-        } else {
-            doneBarButton.isEnabled = true
-        }
+        doneBarButton.isEnabled = !newText.isEmpty
+        return true
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        doneBarButton.isEnabled = false
         return true
     }
     
