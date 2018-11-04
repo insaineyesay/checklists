@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="ZKk-1E-dOH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oaU-VM-P4V">
                             <connections>
-                                <segue destination="lus-rQ-zw1" kind="show" id="f0z-lf-rsD"/>
+                                <segue destination="lus-rQ-zw1" kind="show" identifier="AddItem" id="f0z-lf-rsD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,7 +83,6 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
                                                         <action selector="done" destination="lus-rQ-zw1" eventType="editingDidEndOnExit" id="Nyg-Ke-thW"/>
-                                                        <action selector="done" destination="lus-rQ-zw1" eventType="editingDidEnd" id="pww-Hb-aIe"/>
                                                         <outlet property="delegate" destination="lus-rQ-zw1" id="oek-5D-DCq"/>
                                                     </connections>
                                                 </textField>
