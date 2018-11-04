@@ -17,6 +17,7 @@ protocol AddItemViewControllerDelegate: class {
 class AddItemViewController: UITableViewController, UITextFieldDelegate {
     weak var delegate: AddItemViewControllerDelegate?
     
+    // MARK:- Navigation
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textField.becomeFirstResponder()
@@ -29,12 +30,14 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     
         // MARK:- Actions
     @IBAction func cancel() {
-        navigationController?.popViewController(animated: true)
+        delegate?.addItemViewControllerDidCancel(self)
     }
     
     @IBAction func done() {
-        print("Contents of the text field: \(textField.text!)")
-        navigationController?.popViewController(animated: true)
+        let item = ChecklistItem()
+        item.text = textField.text!
+        
+        delegate?.addItemViewController(self, didFinishAdding: item)
     }
     
     
