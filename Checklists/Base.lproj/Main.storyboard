@@ -17,24 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="ChecklistItem" id="SKv-TQ-4qZ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ChecklistItem" id="SKv-TQ-4qZ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SKv-TQ-4qZ" id="8gf-17-kD7">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mW-mF-j6w">
-                                            <rect key="frame" x="11" y="11" width="313" height="21.5"/>
+                                            <rect key="frame" x="30" y="11" width="266" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfX-nX-m9u">
+                                            <rect key="frame" x="9" y="6" width="13" height="27"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="0mW-mF-j6w" firstAttribute="leading" secondItem="8gf-17-kD7" secondAttribute="leading" constant="11" id="306-bk-tT3"/>
+                                        <constraint firstItem="0mW-mF-j6w" firstAttribute="leading" secondItem="8gf-17-kD7" secondAttribute="leading" constant="30" id="306-bk-tT3"/>
                                         <constraint firstItem="0mW-mF-j6w" firstAttribute="top" secondItem="8gf-17-kD7" secondAttribute="top" constant="11" id="98Z-gY-lSx"/>
                                         <constraint firstAttribute="bottom" secondItem="0mW-mF-j6w" secondAttribute="bottom" constant="11" id="Fg2-yT-f5l"/>
+                                        <constraint firstItem="dfX-nX-m9u" firstAttribute="top" secondItem="8gf-17-kD7" secondAttribute="top" constant="6" id="NfC-SR-caW"/>
+                                        <constraint firstItem="dfX-nX-m9u" firstAttribute="leading" secondItem="8gf-17-kD7" secondAttribute="leading" constant="9" id="PZk-sU-sDT"/>
+                                        <constraint firstItem="0mW-mF-j6w" firstAttribute="leading" secondItem="dfX-nX-m9u" secondAttribute="trailing" constant="8" id="ofa-kG-m7e"/>
+                                        <constraint firstAttribute="bottom" secondItem="dfX-nX-m9u" secondAttribute="bottom" constant="10.5" id="u9i-DV-eIZ"/>
                                         <constraint firstAttribute="trailing" secondItem="0mW-mF-j6w" secondAttribute="trailing" constant="11" id="y6N-hc-nbB"/>
                                     </constraints>
                                 </tableViewCellContentView>
