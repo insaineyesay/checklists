@@ -48,6 +48,9 @@
                                         <constraint firstAttribute="trailing" secondItem="0mW-mF-j6w" secondAttribute="trailing" constant="11" id="y6N-hc-nbB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="lus-rQ-zw1" kind="show" identifier="EditItem" trigger="accessoryAction" id="Mke-sQ-igD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -147,4 +150,7 @@
             <point key="canvasLocation" x="24.800000000000001" y="106.59670164917542"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="f0z-lf-rsD"/>
+    </inferredMetricsTieBreakers>
 </document>
