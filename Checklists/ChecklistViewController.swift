@@ -53,7 +53,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .never
         // Do any additional setup after loading the view, typically from a nib.
         let item1 = ChecklistItem()
         item1.text = "Walk the dog"
