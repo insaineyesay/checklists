@@ -29,6 +29,14 @@ class AllListsViewController: UITableViewController {
         list = Checklist(name: "To Do")
         lists.append(list)
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowChecklist" {
+            let controller = segue.destination as! ChecklistViewController
+            controller.checklist = sender as? Checklist
+        }
+    }
 
     // MARK: - Table view data source
 
@@ -39,8 +47,9 @@ class AllListsViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = makeCell
-        // Update cell info
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+//        let cell = makeCell(for: tableView)
+        
         let checklist = lists[indexPath.row]
         cell.textLabel!.text = checklist.name
         cell.accessoryType = .detailDisclosureButton
@@ -49,6 +58,7 @@ class AllListsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowChecklist", sender: nil)
+        let checklist = lists[indexPath.row]
+        performSegue(withIdentifier: "ShowChecklist", sender: checklist)
     }
 }
