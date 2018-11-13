@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38C5BCAD219A63A400BFD32C /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04418C22187C85000416BB5 /* ChecklistViewController.swift */; };
-		38C5BCAE219A63A400BFD32C /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05742102198B4780087A1CF /* ListDetailViewController.swift */; };
-		38C5BCAF219A63A400BFD32C /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B83CB2218F429B0041E8D5 /* AddItemViewController.swift */; };
-		38C5BCB0219A63A400BFD32C /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B83CAE218E31F70041E8D5 /* ChecklistItem.swift */; };
-		38C5BCB1219A63A400BFD32C /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057420C2197C52D0087A1CF /* AllListsViewController.swift */; };
-		38C5BCB2219A63A400BFD32C /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057420E2197DACA0087A1CF /* Checklist.swift */; };
-		38C5BCB3219A63A400BFD32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04418C02187C85000416BB5 /* AppDelegate.swift */; };
-		38C5BCB6219A63A400BFD32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04418C92187C85100416BB5 /* LaunchScreen.storyboard */; };
-		38C5BCB7219A63A400BFD32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04418C72187C85100416BB5 /* Assets.xcassets */; };
-		38C5BCB8219A63A400BFD32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04418C42187C85000416BB5 /* Main.storyboard */; };
 		F04418C12187C85000416BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04418C02187C85000416BB5 /* AppDelegate.swift */; };
 		F04418C32187C85000416BB5 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04418C22187C85000416BB5 /* ChecklistViewController.swift */; };
 		F04418C62187C85000416BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04418C42187C85000416BB5 /* Main.storyboard */; };
@@ -30,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38C5BCBC219A63A400BFD32C /* Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		38C5BCBD219A63A500BFD32C /* Checklists Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Checklists Dev-Info.plist"; path = "/Users/AE06536/Dev/iosWorkShop/checklists/Checklists Dev-Info.plist"; sourceTree = "<absolute>"; };
 		F04418BD2187C85000416BB5 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04418C02187C85000416BB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F04418C22187C85000416BB5 /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
@@ -47,13 +35,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38C5BCB4219A63A400BFD32C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F04418BA2187C85000416BB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				F04418BD2187C85000416BB5 /* Checklists.app */,
-				38C5BCBC219A63A400BFD32C /* Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +70,6 @@
 				F04418C72187C85100416BB5 /* Assets.xcassets */,
 				F04418C92187C85100416BB5 /* LaunchScreen.storyboard */,
 				F04418CC2187C85100416BB5 /* Info.plist */,
-				38C5BCBD219A63A500BFD32C /* Checklists Dev-Info.plist */,
 				F0B83CAE218E31F70041E8D5 /* ChecklistItem.swift */,
 				F0B83CB2218F429B0041E8D5 /* AddItemViewController.swift */,
 				F057420C2197C52D0087A1CF /* AllListsViewController.swift */,
@@ -103,24 +82,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38C5BCAB219A63A400BFD32C /* Dev */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38C5BCB9219A63A400BFD32C /* Build configuration list for PBXNativeTarget "Dev" */;
-			buildPhases = (
-				38C5BCAC219A63A400BFD32C /* Sources */,
-				38C5BCB4219A63A400BFD32C /* Frameworks */,
-				38C5BCB5219A63A400BFD32C /* Resources */,
-				38C5BCBE219A663300BFD32C /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Dev;
-			productName = Checklists;
-			productReference = 38C5BCBC219A63A400BFD32C /* Dev.app */;
-			productType = "com.apple.product-type.application";
-		};
 		F04418BC2187C85000416BB5 /* Checklists */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F04418CF2187C85100416BB5 /* Build configuration list for PBXNativeTarget "Checklists" */;
@@ -167,22 +128,11 @@
 			projectRoot = "";
 			targets = (
 				F04418BC2187C85000416BB5 /* Checklists */,
-				38C5BCAB219A63A400BFD32C /* Dev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38C5BCB5219A63A400BFD32C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38C5BCB6219A63A400BFD32C /* LaunchScreen.storyboard in Resources */,
-				38C5BCB7219A63A400BFD32C /* Assets.xcassets in Resources */,
-				38C5BCB8219A63A400BFD32C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F04418BB2187C85000416BB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,41 +145,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		38C5BCBE219A663300BFD32C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#if DEVELOPMENT\nlet SERVER_URL = \"http://dev.server.com/api/\"\nlet API_TOKEN = \"DI2023409jf90ew\"\necho \"develop\"\n#else\nlet SERVER_URL = \"http://prod.server.com/api/\"\nlet API_TOKEN = \"71a629j0f090232\"\necho \"production\"\n#endif\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		38C5BCAC219A63A400BFD32C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				38C5BCAD219A63A400BFD32C /* ChecklistViewController.swift in Sources */,
-				38C5BCAE219A63A400BFD32C /* ListDetailViewController.swift in Sources */,
-				38C5BCAF219A63A400BFD32C /* AddItemViewController.swift in Sources */,
-				38C5BCB0219A63A400BFD32C /* ChecklistItem.swift in Sources */,
-				38C5BCB1219A63A400BFD32C /* AllListsViewController.swift in Sources */,
-				38C5BCB2219A63A400BFD32C /* Checklist.swift in Sources */,
-				38C5BCB3219A63A400BFD32C /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F04418B92187C85000416BB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,44 +182,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		38C5BCBA219A63A400BFD32C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66SE8RPAWU;
-				INFOPLIST_FILE = "Checklists Dev-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ajira.Checklists.Dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		38C5BCBB219A63A400BFD32C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66SE8RPAWU;
-				INFOPLIST_FILE = "Checklists Dev-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ajira.Checklists.Dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		F04418CD2187C85100416BB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,15 +337,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38C5BCB9219A63A400BFD32C /* Build configuration list for PBXNativeTarget "Dev" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38C5BCBA219A63A400BFD32C /* Debug */,
-				38C5BCBB219A63A400BFD32C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		F04418B82187C85000416BB5 /* Build configuration list for PBXProject "Checklists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
